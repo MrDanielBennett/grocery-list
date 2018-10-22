@@ -1,3 +1,43 @@
+p {
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+body {
+  background-image: url("../img/background.jpg"), url("../img/egg2.png");
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+}
+
 #hidden-things {
   display: none;
+}
+
+#add-section {
+  display: none;
+}
+
+#full-submit {
+  display: block;
+  margin-top: 10px;
+}
+
+#done-button {
+  display: block;
+  margin-top: 10px;
+}
+
+.jumbotron {
+  margin-top: 10px;
+  background-color: rgba(252, 223, 207, 1);
+  border: solid 1px black;
+}
+
+.well {
+  background-color: rgba(252, 223, 207, 1);
+  border: solid 1px black;
+}
+
+.jumbotron h1 {
+  text-align: center;
 }

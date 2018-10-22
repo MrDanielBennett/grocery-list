@@ -10,21 +10,35 @@
   </head>
   <body>
     <div class="container">
-      <h1>Grocery List</h1>
-      <div id="hideable-form">
+      <div class="jumbotron">
+        <h1>Grocery List</h1>
+      </div>
+      <div id="hideable-form" class="well">
         <form id="input-form">
           <div class="form-group">
             <label for="input">Enter your item</label>
             <input type="text" id="input" class="form-control">
           </div>
           <button type="submit" class="btn-default">Add to list</button>
+          <button class="btn-success" id="full-submit">See your list!</button>
         </form>
-        <button class="btn-success" id="full-submit">See your list!</button>
       </div>
-      <div id="hidden-things">
-        <p>Here is your completed grocery list!  Next time you go to the store, don't forget to buy all of the following items:</p>
-        <ul>
+      <div id="add-section" class="well">
+        <form id="add-form">
+          <div class="form-group">
+            <label for="input">Enter your item</label>
+            <input type="text" id="add" class="form-control">
+          </div>
+          <button type="submit" class="btn-default">Add to list</button>
+        </form>
+        <button class="btn-success" id="done-button">I'm done</button>
+      </div>
+      <div id="hidden-things" class="well">
+        <p id="complete">This is your completed grocery list!  Next time you go to the store, don't forget to buy all of the following items:</p>
+        <p id="editing">This is your current list:</p>
+        <ul id="grocery-list">
         </ul>
+        <button class="btn-default" id="return">Add to list</button>
       </div>
     </div>
   </body>
