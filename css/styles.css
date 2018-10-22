@@ -9,6 +9,11 @@ body {
   background-repeat: no-repeat, repeat;
 }
 
+label {
+  font-weight: bold;
+  font-size: 12pt;
+}
+
 #hidden-things {
   display: none;
 }
